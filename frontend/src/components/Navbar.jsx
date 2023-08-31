@@ -7,7 +7,7 @@ const Navbar = () => {
           src="/cross.png"
           alt="logo"
           style={{
-            height: "60px",
+            height: "50px",
             paddingRight: "6px",
             verticalAlign: "middle",
           }}
