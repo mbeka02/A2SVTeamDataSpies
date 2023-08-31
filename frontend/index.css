@@ -43,6 +43,7 @@ body {
   padding: 10px 15px;
   max-width: 70%;
   word-wrap: break-word;
+  margin: 0.2rem 0 0.2rem 0;
 }
 
 .bot-message {
@@ -53,6 +54,7 @@ body {
   padding: 10px 15px;
   max-width: 70%;
   word-wrap: break-word;
+  margin: 0.2rem 0 0.2rem 0;
 }
 
 /* Input field and button */
@@ -69,6 +71,7 @@ body {
   padding: 10px;
   border-radius: 20px;
   margin-right: 10px;
+  font-size: medium;
 }
 
 .send-button {
@@ -78,4 +81,6 @@ body {
   border-radius: 20px;
   padding: 10px 15px;
   cursor: pointer;
+  font-weight: bolder;
+  font-size: medium;
 }
