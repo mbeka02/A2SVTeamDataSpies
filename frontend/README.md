@@ -1,1 +1,1 @@
-This is a repository for the frontend code
+This is a repository for the frontend
