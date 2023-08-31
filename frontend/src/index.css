@@ -45,7 +45,7 @@ body {
 
 .user-message {
   align-self: flex-end;
-  background-color: #0084ff;
+  background-color: #4b91f1;
   color: white;
   border-radius: 20px;
   padding: 10px 15px;
@@ -83,7 +83,7 @@ body {
 }
 
 .send-button {
-  background-color: #0084ff;
+  background-color: #4b91f1;
   color: white;
   border: none;
   border-radius: 20px;
@@ -91,4 +91,94 @@ body {
   cursor: pointer;
   font-weight: bolder;
   font-size: medium;
+}
+
+.topnav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0.75rem 1rem 0.75rem;
+  align-items: center;
+}
+
+.navlogo {
+  font-size: 1.25rem;
+  margin-left: 1rem;
+}
+
+.underline_on_hover {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 1000;
+  position: relative;
+  transition: all 0.15s ease-in-out;
+}
+
+.underline_on_hover::after {
+  content: "";
+  position: absolute;
+  bottom: -6px; /* Separation from the text */
+  left: -1%;
+  right: 101%;
+  height: 4px; /* Thickness of the underline */
+  background-color: #4b91f1;
+  border-radius: 3px;
+  transition: right 0.15s ease-in-out;
+  cursor: pointer;
+}
+
+.underline_on_hover:hover::after {
+  right: -1%;
+}
+
+@keyframes loading-gradient {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+/* By default, the image is displayed */
+.tttlogo {
+  display: block;
+}
+
+/* When the viewport width is less than 450 pixels, hide the image */
+@media (max-width: 449px) {
+  .underline_on_hover {
+    font-size: 1.4rem; /* Adjusts the size of the text in the anchor tag */
+  }
+}
+
+/* When the viewport width is less than 450 pixels, hide the image */
+@media (max-width: 530px) {
+  .tttlogo {
+    display: none;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .topnav {
+    display: "flex";
+    border: 1px solid black;
+    align-items: center;
+    padding: 0.85rem 0.75rem 0.85rem 0.75rem;
+    justify-content: "space-between";
+  }
 }
